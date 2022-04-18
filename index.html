@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header >
+        <div class="head flex">
+    <img src="./img/to-do.png"  class ="logo"alt="logo">
+    <p class="menu">About Us</p>
+</div>
+    </header>
+   <main>
+<!--modal-->
+<div class="modal" id="todo_form">
+    <div class="header">
+      <div class="title">Add Todo</div>
+      <button class="btn close-modal">&times;</button>
+    </div>
+    <div class="body">
+      <input type="text" id="todo_input" />
+      <input type="submit" value="Add Todo" id="todo_submit" />
+    </div>
+  </div>
+
+
+<!--to do-->   
+<div class="hero flex ">
+<div class="col1 col " id="coll">
+<nav class=" nav flex">
+<h1>to-do</h1>
+<button class="add_btn " data-target-modal="#todo_form">add card</button>
+</nav>
+<div class="todo" draggable="true">
+    Welcome we are happy to have you here with us nice to meet you bddy 
+    <span class="close">&times;</span>
+</div>
+
+</div>
+<div class="col2 col">
+    <nav class=" nav flex">
+        <h1>Inprocess</h1>
+       
+        </nav>
+</div>
+<div class="col3 col">
+    <nav class=" nav flex">
+        <h1>Done</h1>
+        
+        </nav>
+</div>
+</div>
+
+
+   </main>
+   <div id="overlay"></div>
+   <script src="./script.js"></script>
+</body>
+
+
+
+</html>
